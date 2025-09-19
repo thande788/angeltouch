@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.css';
-import { FaHome, FaHandsHelping, FaUserNurse, FaQuoteLeft, FaQuestionCircle, FaPhoneAlt, FaBook } from 'react-icons/fa';
+import { FaHome, FaHandsHelping, FaUserNurse, FaQuoteLeft, FaQuestionCircle, FaPhoneAlt, FaBook, FaUser } from 'react-icons/fa';
 
 const navLinks = [
   { to: '/', label: 'Home', icon: <FaHome /> },
@@ -14,6 +14,7 @@ const navLinks = [
   { to: '/faqs', label: 'FAQs', icon: <FaQuestionCircle /> },
   { to: '/resources', label: 'Resources', icon: <FaBook /> },
   { to: '/contact', label: 'Contact', icon: <FaPhoneAlt /> },
+  { to: '/client-portal', label: 'Client Portal', icon: <FaUser /> },
 ];
 
 const Navbar = () => {

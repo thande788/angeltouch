@@ -10,6 +10,7 @@ import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import FAQs from './pages/FAQs';
 import Resources from './pages/Resources';
+import ClientPortal from './pages/ClientPortal';
 import ChatWidget from './components/ChatWidget';
 import './App.css';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/client-portal" element={<ClientPortal />} />
         </Routes>
         <Footer />
         <ChatWidget />

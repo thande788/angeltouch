@@ -40,7 +40,10 @@ const Home = () => (
     </section>
     <section style={{ textAlign: 'center', margin: '3rem 0', width: '100%' }}>
       <h3 style={{ fontSize: '1.7rem', color: '#2991fd' }}>Ready to experience compassionate care?</h3>
-      <a href="/contact" className="button cta-yellow" style={{ fontSize: '1.2rem', marginTop: '1rem', background: '#F6E05E', color: '#2991fd' }}>Get Started</a>
+      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', marginTop: '1rem' }}>
+        <a href="/contact" className="button cta-yellow" style={{ fontSize: '1.2rem', background: '#F6E05E', color: '#2991fd' }}>Get Started</a>
+        <a href="/client-portal" className="button" style={{ fontSize: '1.2rem', background: '#2991fd', color: 'white', padding: '0.8rem 1.5rem', textDecoration: 'none', borderRadius: '8px', fontWeight: '600' }}>Family Portal Login</a>
+      </div>
     </section>
   </main>
 );
