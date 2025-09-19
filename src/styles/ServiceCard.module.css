@@ -1,0 +1,90 @@
+/* Service Card Styles - Professional and accessible */
+.card {
+  background: var(--white);
+  border: 2px solid rgba(111, 168, 220, 0.2);
+  border-radius: 24px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 280px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+body.dark .card {
+  background: #2d2d2d;
+  color: var(--text-light);
+  border: 2px solid rgba(111, 168, 220, 0.3);
+}
+
+.card:focus,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(111, 168, 220, 0.15);
+  border-color: var(--primary-blue);
+}
+
+.img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 0.5rem;
+  max-height: 120px;
+  object-fit: cover;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Service card headings use sans-serif for consistency */
+.card h3 {
+  color: var(--primary-blue);
+  font-family: var(--sans-body);
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Service card body text */
+.card p {
+  color: var(--text-dark);
+  font-family: var(--sans-body);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+body.dark .card p {
+  color: var(--text-light);
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  justify-content: center;
+}
+.ctaBtn {
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5em 1.4em;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.ctaBtn:focus, .ctaBtn:hover {
+  background: var(--primary-pink);
+  outline: 2px solid var(--primary-pink);
+}

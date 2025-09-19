@@ -1,0 +1,98 @@
+/* About.module.css - Modern, accessible, responsive styles for About page */
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.portraitSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(44, 122, 123, 0.08);
+  padding: 2rem 1.5rem;
+}
+
+.portraitImg {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(26, 54, 93, 0.10);
+  margin-bottom: 1.5rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.badge {
+  background: #2991fd !important;
+  color: #fff !important;
+  border-radius: 1.2em;
+  padding: 0.3em 1em;
+  font-weight: 700;
+  font-size: 0.98em;
+  box-shadow: 0 2px 8px rgba(41,145,253,0.10);
+}
+
+.textSection {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(44, 122, 123, 0.08);
+  padding: 2rem 2rem 2.5rem 2rem;
+}
+
+.textSection h2 {
+  color: var(--primary-blue);
+  margin-bottom: 0.7rem;
+}
+
+.textSection ul {
+  margin: 1rem 0 0 1.2rem;
+  padding: 0;
+  list-style: disc inside;
+}
+
+.legalSection {
+  margin-top: 2.5rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem 2rem;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .aboutContainer {
+    padding: 1rem 0.2rem 2rem 0.2rem;
+  }
+  .textSection, .portraitSection, .legalSection {
+    padding: 1.2rem 0.7rem;
+  }
+  .portraitImg {
+    width: 140px;
+    height: 140px;
+  }
+}

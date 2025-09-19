@@ -1,0 +1,83 @@
+/* Contact.module.css - Modern, accessible, responsive styles for Contact page */
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  width: 100%;
+}
+
+.formSection, .infoSection {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.formSection h2, .infoSection h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input, .textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #2991fd;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  background: #f7faff;
+  color: var(--primary-blue);
+  transition: border 0.2s;
+}
+.input:focus, .textarea:focus {
+  border: 3px solid #2991fd;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(41, 145, 253, 0.2);
+}
+
+.ctaBtn {
+  align-self: flex-start;
+  background: var(--primary-blue);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7em 2em;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ctaBtn:active, .ctaBtn:focus {
+  background: var(--primary-pink);
+  outline: 2px solid var(--primary-pink);
+}
+
+.successMsg {
+  text-align: center;
+  padding: 2rem;
+  background: var(--accent-gold);
+  border-radius: 12px;
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .formSection, .infoSection {
+    padding: 1.2rem 0.7rem;
+  }
+}

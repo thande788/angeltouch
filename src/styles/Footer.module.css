@@ -1,0 +1,157 @@
+/* Angel Touch Homecare Services - Footer Styles */
+
+.footer {
+  background: #f7faff;
+  color: #2d3e50;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  border-top: 2px solid #b3c7e6;
+  font-size: 1rem;
+}
+.footer strong {
+  color: #3a7ca5;
+  font-family: 'Playfair Display', serif;
+}
+.info {
+  margin: 0.5rem 0;
+  color: #6b7a8f;
+}
+.social {
+  margin-top: 0.5rem;
+}
+.icon {
+  margin: 0 0.5rem;
+  color: #3a7ca5;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.icon:hover,
+.icon:focus {
+  color: #f7d774;
+  outline: none;
+}
+.footerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0 0 0;
+}
+.brandSection {
+  flex: 1 1 220px;
+  text-align: left;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.infoSection {
+  flex: 2 1 320px;
+  text-align: left;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contactLinks {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.divider {
+  color: #b3c7e6;
+  font-size: 1.1em;
+}
+.socialSection {
+  flex: 1 1 120px;
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 120px;
+}
+.legal {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #6b7a8f;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.companyName {
+  font-family: 'Nunito', 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 800px) {
+  .footerGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+    padding: 0.5rem 0 0 0;
+  }
+  .brandSection, .infoSection, .socialSection {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialSection {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .footerGrid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+    padding: 0.5rem 0 0 0;
+  }
+  .brandSection, .infoSection, .socialSection {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialSection {
+    justify-content: center;
+  }
+  .companyName {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+body.dark .footer {
+  background: #181a1b;
+  color: #e0e0e0;
+  border-top: 2px solid #333a4d;
+}
+body.dark .footer strong {
+  color: #ffe066;
+}
+body.dark .info, body.dark .legal {
+  color: #a0a0a0;
+}
+body.dark .icon {
+  color: #ffe066;
+}
+body.dark .icon:hover,
+body.dark .icon:focus {
+  color: #ff5c8a;
+}
+body.dark .contactLinks a {
+  color: #ffe066;
+}
+body.dark .divider {
+  color: #333a4d;
+}
+body.dark .footerGrid, body.dark .brandSection, body.dark .infoSection, body.dark .socialSection {
+  background: transparent;
+}
+body.dark .companyName {
+  color: #ffe066;
+}

@@ -1,0 +1,56 @@
+/* Angel Touch Homecare Services - Home Page Styles */
+
+.home {
+  min-height: 70vh;
+  background: linear-gradient(180deg, #e3f0fa 0%, #fffbe6 100%);
+  padding: 2rem 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: #3a7ca5;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px #e3f0fa;
+}
+.tagline {
+  color: #6b7a8f;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.cta {
+  background: #f7d774;
+  color: #2d3e50;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #e3f0fa;
+  transition: background 0.2s, color 0.2s;
+}
+.cta:hover,
+.cta:focus {
+  background: #3a7ca5;
+  color: #fff;
+  outline: none;
+}
+.intro {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px #e3f0fa;
+  padding: 2rem 1.5rem;
+}
+.intro h2 {
+  color: #3a7ca5;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+}

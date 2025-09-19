@@ -1,0 +1,62 @@
+/* Resources.module.css - Modern, accessible, responsive styles for Resources page */
+
+.resourcesContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.resourcesTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: 2.5rem;
+}
+
+.resourcesList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.resourceCard {
+  background: var(--white);
+  border: 2px solid #e3f0fa;
+  border-radius: 16px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+  transition: box-shadow 0.2s, border 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.resourceCard:focus-within, .resourceCard:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.10);
+}
+
+.resourceLink {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.resourceLink:focus, .resourceLink:hover {
+  color: var(--primary-pink);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .resourcesContainer {
+    padding: 1rem 0.2rem 2rem 0.2rem;
+  }
+  .resourceCard {
+    padding: 1rem 0.5rem;
+  }
+}

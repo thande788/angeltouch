@@ -1,0 +1,69 @@
+/* Carousel styles for testimonials */
+.carouselContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 3rem auto 2rem auto;
+  position: relative;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-blue);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(26,54,93,0.12);
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouselBtn:active {
+  background: var(--primary-pink);
+}
+.carouselBtn.left {
+  left: 0.5rem;
+}
+.carouselBtn.right {
+  right: 0.5rem;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+.carouselDot {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: #B2F5EA;
+  border: 2px solid var(--primary-blue);
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.carouselDot.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-pink);
+}
