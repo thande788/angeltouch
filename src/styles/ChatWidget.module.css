@@ -1,15 +1,4 @@
-:root {
-  --primary-blue: #2991fd;
-  --primary-blue-dark: #1760a0;
-  --primary-blue-light: #e6f4ff;
-  --primary-green: #2c7a7b;
-  --primary-green-dark: #285e61;
-  --primary-green-light: #e6fffa;
-  --accent-yellow: #ffe066;
-  --neutral-bg: #f7fafc;
-  --text-color: #2d3748;
-}
-
+/* Simplified ChatWidget CSS for immediate functionality */
 .widgetContainer {
   position: fixed;
   bottom: 2rem;
@@ -22,37 +11,45 @@
 }
 
 .openBtn {
-  background: var(--primary-blue);
+  background: linear-gradient(135deg, #2991fd 0%, #1e7eff 100%);
   color: #fff;
   font-weight: 700;
   border: none;
-  border-radius: 2rem;
-  padding: 0.8rem 1.5rem;
-  box-shadow: 0 4px 14px rgba(26, 54, 93, 0.15);
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(41, 145, 253, 0.25);
   cursor: pointer;
-  font-size: 1.1rem;
-  transition: background 0.3s ease;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+
 .openBtn:hover,
 .openBtn:focus {
-  background: var(--primary-blue-dark);
+  background: linear-gradient(135deg, #1760a0 0%, #1560d0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(41, 145, 253, 0.35);
   outline: none;
 }
 
 .chatBox {
-  width: 340px;
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 6px 24px rgba(26, 54, 93, 0.18);
+  width: 380px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 48px rgba(41, 145, 253, 0.18);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  animation: fadeInUp 0.3s ease-out;
+  animation: slideUp 0.4s ease-out;
 }
 
-@keyframes fadeInUp {
+@keyframes slideUp {
   from {
-    transform: translateY(40px);
+    transform: translateY(20px);
     opacity: 0;
   }
   to {
@@ -62,108 +59,113 @@
 }
 
 .header {
-  background: var(--primary-blue);
+  background: linear-gradient(135deg, #2991fd 0%, #1e7eff 100%);
   color: #fff;
   font-weight: 700;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .closeBtn {
-  background: none;
-  border: none;
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
+
 .closeBtn:hover {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
 }
 
 .messages {
-  flex: 1;
-  padding: 1rem;
-  background: var(--neutral-bg);
+  padding: 1.5rem;
+  height: 300px;
   overflow-y: auto;
-  max-height: 240px;
-  font-size: 1rem;
-  scroll-behavior: smooth;
-  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.userMsg,
-.advisorMsg {
-  max-width: 80%;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 1rem;
+.userMsg, .advisorMsg {
   display: flex;
-  align-items: center;
-  gap: 0.4em;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  line-height: 1.4;
+  align-items: flex-end;
+  gap: 0.5rem;
 }
 
 .userMsg {
-  background: var(--primary-green-light);
-  color: var(--primary-blue-dark);
-  align-self: flex-end;
-  border-radius: 1rem 1rem 0 1rem;
+  justify-content: flex-end;
 }
 
-.advisorMsg {
-  background: #fff;
-  color: var(--primary-blue);
-  align-self: flex-start;
-  border-radius: 1rem 1rem 1rem 0;
-  border: 1px solid var(--primary-green-light);
+.userMsg span:not(.avatar) {
+  background: linear-gradient(135deg, #2991fd 0%, #1e7eff 100%);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem 1rem 0.5rem 1rem;
+  max-width: 200px;
+  font-size: 0.9rem;
+}
+
+.advisorMsg span:not(.avatar) {
+  background: rgba(230, 255, 250, 0.8);
+  color: #2d3748;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 1rem 1rem 1rem;
+  max-width: 200px;
+  font-size: 0.9rem;
 }
 
 .avatar {
-  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2c7a7b 0%, #38B2AC 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
 .inputRow {
   display: flex;
-  border-top: 1px solid #e6fffa;
-  background: #fff;
-  padding: 0.3rem;
+  border-top: 1px solid rgba(41, 145, 253, 0.1);
+  background: rgba(255, 255, 255, 0.8);
 }
+
 .input {
   flex: 1;
-  border: 2px solid #2991fd;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
   outline: none;
-  background: var(--neutral-bg);
-  transition: box-shadow 0.2s ease;
-}
-.input:focus {
-  box-shadow: 0 0 0 3px var(--primary-blue-light);
+  background: transparent;
+  font-size: 0.9rem;
 }
 
 .sendBtn {
-  background: var(--primary-green);
+  background: linear-gradient(135deg, #2c7a7b 0%, #38B2AC 100%);
   color: #fff;
   border: none;
-  border-radius: 0 0 1.2rem 0;
-  padding: 0 1.2rem;
-  font-weight: 700;
+  border-radius: 0 0 1.5rem 0;
+  padding: 0 1.5rem;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: all 0.3s ease;
+  min-width: 50px;
 }
-.sendBtn:hover,
-.sendBtn:focus {
-  background: var(--primary-green-dark);
-  outline: none;
+
+.sendBtn:hover {
+  background: linear-gradient(135deg, #285e61 0%, #2c7a7b 100%);
 }
 
 @media (max-width: 600px) {
@@ -171,44 +173,8 @@
     right: 1rem;
     bottom: 1rem;
   }
+  
   .chatBox {
-    width: 95vw;
-    max-width: 100vw;
-    min-width: unset;
-    border-radius: 1rem;
+    width: min(380px, calc(100vw - 2rem));
   }
-}
-
-body.dark .chatBox {
-  background: #1e1f25;
-  color: #e0e0e0;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
-}
-body.dark .header {
-  background: #121417;
-  color: var(--accent-yellow);
-}
-body.dark .messages {
-  background: #23232b;
-}
-body.dark .userMsg {
-  background: #2c7a7b;
-  color: var(--accent-yellow);
-}
-body.dark .advisorMsg {
-  background: #1e1f25;
-  border-color: #2c7a7b;
-  color: #d1d1d1;
-}
-body.dark .input {
-  background: #181a1b;
-  color: var(--accent-yellow);
-}
-body.dark .sendBtn {
-  background: #2c7a7b;
-  color: var(--accent-yellow);
-}
-body.dark .sendBtn:hover,
-body.dark .sendBtn:focus {
-  background: #153159;
 }
