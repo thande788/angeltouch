@@ -1,6 +1,5 @@
 import React from 'react';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
-import testimonialsImg from '../assets/testimonials/pexels-cottonbro-5493781.jpg';
 
 const testimonials = [
   {
@@ -35,7 +34,7 @@ const TestimonialsPage = () => (
     <section style={{ textAlign: 'center', marginBottom: '3rem' }} aria-label="Testimonials Hero">
       <h1 style={{ marginBottom: '1rem', fontSize: '2.5rem', fontWeight: 800, color: 'var(--primary-blue)' }}>Stories from Our Families</h1>
       <img 
-        src={testimonialsImg} 
+        src="https://images.pexels.com/photos/5493781/pexels-photo-5493781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Gentle hands providing comfort and support, representing the trust and care between families and caregivers" 
         style={{ 
           width: '100%', 

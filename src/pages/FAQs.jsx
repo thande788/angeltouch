@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// Search keyword: "seniors family learning together" - Source: Pixabay
-import faqsImg from '../assets/faqs/pexels-kampus-7551615(1).jpg';
 import styles from '../styles/FAQs.module.css';
 
 const faqs = [
@@ -82,7 +80,7 @@ const FAQs = () => {
 		>
 			<h1 className={styles.faqsTitle}>Frequently Asked Questions</h1>
 			<img
-				src={faqsImg}
+				src="https://images.pexels.com/photos/7551615/pexels-photo-7551615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 				alt="Seniors and family learning together, symbolizing support and knowledge sharing"
 				className={styles.faqsImg}
 			/>

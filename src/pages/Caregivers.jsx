@@ -1,7 +1,5 @@
 import React from 'react';
 import CaregiverCard from '../components/CaregiverCard';
-// Search keyword: "diverse healthcare team headshots" - Source: Pexels
-import caregiversImg from '../assets/caregivers/pexels-tima-miroshnichenko-5452228.jpg';
 import styles from '../styles/CaregiverCard.module.css';
 
 const caregivers = [
@@ -36,7 +34,7 @@ const Caregivers = () => (
     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
       <h1 style={{ marginBottom: '1rem', fontSize: '2.5rem', fontWeight: 800, color: 'var(--primary-blue)' }}>Meet Our Compassionate Caregivers</h1>
       <img 
-        src={caregiversImg} 
+        src="https://images.pexels.com/photos/5452228/pexels-photo-5452228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="Professional and diverse team of certified caregivers demonstrating expertise and compassion in home healthcare" 
         style={{ 
           width: '100%', 

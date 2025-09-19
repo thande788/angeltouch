@@ -5,53 +5,41 @@ import { motion } from 'framer-motion';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import ChatWidget from '../components/ChatWidget';
 
-// Search keywords and sources for service images:
-// Personal care: "caregiver grooming senior" - Source: Unsplash
-// Companionship: "caregiver talking with senior" - Source: Pexels  
-// Meal prep: "senior cooking with caregiver" - Source: Pixabay
-// Housekeeping: "caregiver cleaning senior home" - Source: Pexels
-// Transportation: "caregiver helping senior into car" - Source: Unsplash
-import personalCareImg from '../assets/services/personal care.jpg';
-import companionshipImg from '../assets/services/companionship.jpg';
-import mealPrepImg from '../assets/services/meal prep.jpg';
-import housekeepingImg from '../assets/services/Housekeeping.jpg';
-import transportationImg from '../assets/services/transportation.jpg';
-
 const services = [
 	{
 		title: 'Personal Care',
 		description: 'Bathing, toileting, grooming, and dressing assistance.',
-		image: personalCareImg,
+		image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Compassionate caregiver gently assisting a senior with personal grooming in a comfortable home setting'
 	},
 	{
 		title: 'Companionship & Supervision',
 		description: 'Friendly conversation, safety monitoring, and emotional support.',
-		image: companionshipImg,
+		image: 'https://images.pexels.com/photos/7551615/pexels-photo-7551615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Caregiver engaging in warm conversation with a senior client, providing emotional support and companionship'
 	},
 	{
 		title: 'Meal Planning & Preparation',
 		description: 'Nutritious meal planning, cooking, and dietary support.',
-		image: mealPrepImg,
+		image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Senior and caregiver preparing a healthy meal together in a bright kitchen'
 	},
 	{
 		title: 'Medication Reminders',
 		description: 'Timely reminders to ensure medication compliance.',
-		image: personalCareImg, // Using personal care as placeholder for medication reminders
+		image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Caregiver providing gentle medication reminder support to ensure client health and safety'
 	},
 	{
 		title: 'Light Housekeeping & Laundry',
 		description: 'Tidying, laundry, and maintaining a safe home environment.',
-		image: housekeepingImg,
+		image: 'https://images.pexels.com/photos/7551615/pexels-photo-7551615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Professional caregiver helping maintain a clean and safe home environment for senior client'
 	},
 	{
 		title: 'Transportation & Escort',
 		description: 'Rides and accompaniment to appointments and errands.',
-		image: transportationImg,
+		image: 'https://images.pexels.com/photos/7345465/pexels-photo-7345465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		alt: 'Caregiver assisting senior client safely into vehicle for medical appointment or errands'
 	},
 ];

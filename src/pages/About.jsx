@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
-import aboutImg from '../assets/about/pexels-edmond-dantes-4342498.jpg';
 
 // Accessible About page with modern two-column layout, badges, and responsive design
 const credentials = [
@@ -19,7 +18,7 @@ const About = () => (
       {/* Founder portrait and badges */}
       <aside className={styles.portraitSection} aria-label="Founder and Credentials">
         <img
-          src={aboutImg}
+          src="https://images.pexels.com/photos/4342498/pexels-photo-4342498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Portrait of Angel Touch Homecare Services founder, a compassionate caregiver"
           className={styles.portraitImg}
           loading="lazy"

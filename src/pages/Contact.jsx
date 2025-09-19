@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import contactImg from '../assets/contact/pexels-ron-lach-8691830.jpg';
 import styles from '../styles/Contact.module.css';
 
 const Contact = () => {
@@ -36,7 +35,7 @@ const Contact = () => {
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <h1 style={{ marginBottom: '1rem', fontSize: '2.5rem', fontWeight: 800, color: 'var(--primary-blue)' }}>Get In Touch</h1>
         <img 
-          src={contactImg} 
+          src="https://images.pexels.com/photos/8691830/pexels-photo-8691830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Professional caregiver listening attentively during a consultation, symbolizing open communication and care" 
           style={{ 
             width: '100%', 

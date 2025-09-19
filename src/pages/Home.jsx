@@ -1,11 +1,9 @@
 import React from 'react';
 import '../styles/global.css';
-// Search keyword: "caregiver assisting senior home" - Source: Unsplash
-import heroImg from '../assets/home/pexels-shkrabaanthony-7345465.jpg';
 
 const Home = () => (
   <main className="main-content home-hero" style={{ paddingTop: 0 }}>
-    <section className="hero-section" style={{ marginTop: 0, borderRadius: '0 0 2.5rem 2.5rem', boxShadow: 'none', background: `url(${heroImg}) center/cover no-repeat, #2991fd` }}>
+    <section className="hero-section" style={{ marginTop: 0, borderRadius: '0 0 2.5rem 2.5rem', boxShadow: 'none', background: `url(https://images.pexels.com/photos/7345465/pexels-photo-7345465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover no-repeat, #2991fd` }}>
       <div className="hero-overlay" aria-hidden="true" style={{ background: 'linear-gradient(90deg, rgba(41,145,253,0.82) 60%, rgba(44,122,123,0.45) 100%)' }}></div>
       <div className="hero-content" style={{ color: '#fff' }}>
         <h1 className="tagline" style={{ color: '#fff' }}>
